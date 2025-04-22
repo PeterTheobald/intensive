@@ -84,16 +84,15 @@ main, section {
 /* Countdown layout */
 #countdown {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
   gap: 1.5rem;
-  margin: 2rem 0;
+  margin: 2rem auto;       /* center horizontally */
+  max-width: 900px;        /* match your page width */
+  padding: 0 1rem;         /* same side‐padding as other sections */
 }
 
 #countdown div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 /* Section headings */
