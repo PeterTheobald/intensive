@@ -1,4 +1,5 @@
 /* style.css */
+
 :root {
   --bg:         #000000;
   --fg:         #ffffff;
@@ -50,6 +51,7 @@ header p {
   padding: .75rem 1.5rem;
   border-radius: 4px;
   font-weight: bold;
+  margin: 0 .5rem;
 }
 
 main, section {
@@ -58,6 +60,40 @@ main, section {
   padding: 0 1rem;
 }
 
+/* Horizontal card layout */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Hackathon page columns */
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  min-width: 240px;
+}
+
+/* Countdown layout */
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+#countdown div {
+  text-align: center;
+}
+
+/* Section headings */
 h2 {
   color: var(--secondary);
   font-size: 1.75rem;
@@ -66,17 +102,6 @@ h2 {
 
 ul, dl {
   margin-bottom: 1.5rem;
-}
-
-.columns {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.column {
-  flex: 1;
-  min-width: 240px;
 }
 
 footer {
