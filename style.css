@@ -1,14 +1,18 @@
 /* style.css */
 :root {
-  --bg:         #1d1f20;  /* dark charcoal */
-  --fg:         #f1faee;  /* off‑white */
-  --primary:    #e63946;  /* intense red */
-  --secondary:  #f4a261;  /* warm orange */
-  --accent:     #ffbe0b;  /* bright yellow */
-  --muted:      #6c757d;  /* gray */
+  --bg:         #000000;
+  --fg:         #ffffff;
+  --primary:    #ff0000;
+  --secondary:  #b30000;
+  --accent:     #ff4d4d;
+  --muted:      #666666;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background: var(--bg);
@@ -17,7 +21,10 @@ body {
   line-height: 1.5;
 }
 
-a { color: var(--accent); text-decoration: none; }
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
 
 header {
   background: var(--primary);
@@ -78,5 +85,4 @@ footer {
   color: var(--muted);
   font-size: .9rem;
 }
-
 
